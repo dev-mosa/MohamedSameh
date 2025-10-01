@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohamed Sameh - Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+      <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Custom Cursor -->
+    <div class="cursor-follow"></div>
+
+    <!-- Bottom Blur Overlay -->
+    <div class="bottom-blur-overlay"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#home">Mohamed Sameh</a>
+
+        <div class="navbar-controls d-flex align-items-center">
+          <!-- Dark/Light Mode Toggle -->
+          <button class="btn btn-link theme-toggle me-3" id="themeToggle">
+            <i class="fas fa-moon" id="themeIcon"></i>
+          </button>
+
+          <!-- Hamburger Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#certificates">Certificates</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="hero-bg">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+        <div class="floating-shape shape-4"></div>
+      </div>
+
+      <div class="container h-100">
+        <div
+          class="row h-100 align-items-center justify-content-center text-center"
+        >
+          <div class="col-lg-8">
+            <div class="hero-content">
+              <div class="profile-image mb-4">
+                <img
+                  src="media/Proj.jpeg"
+                  alt="Mohamed Sameh"
+                  class="img-fluid rounded-circle"
+                />
+              </div>
+              <h1 class="hero-headline mb-4">
+                I've been building sleek, fast websites made for people, not
+                just screens
+              </h1>
+              <p class="hero-subtext mb-5">
+                Let your online presence start with a clean, modern, and
+                responsive web design.
+              </p>
+              <a href="#contact" class="badge -bg-secondary hero-cta"
+                >Contact Me</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="scroll-indicator">
+          <div class="scroll-arrow">
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Small Divider Section -->
+    <section class="divider-section">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-8">
+            <p class="tagline">GREATER, TOGETHER!</p>
+            <h2 class="divider-headline hero-subtext">
+              I'm ready to help you shine <i class="fas fa-star star-icon"></i>
+            </h2>
+            <p class="divider-subtext">
+              Turning your vision into a website that attracts, engages, and
+              converts.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="about-header text-center mb-5">
+          <p class="about-name">Mohamed Sameh</p>
+          <h2 class="about-title">About Me</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="about-card">
+              <div class="card-icon">
+                <i class="fas fa-user text-primary"></i>
+              </div>
+              <h4 class="card-title">Personal</h4>
+              <p class="card-text">
+                In a digital world full of templates, I chose a different path.
+                I wrote my first lines of code at 14 — not for school, but to
+                reshape how people experience the web. Since then, I’ve built
+                sleek, fast websites made for people, not just screens. I don’t
+                just write code; I craft experiences that make brands
+                unforgettable. Let’s build something extraordinary together.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="about-card">
+              <div class="card-icon">
+                <i class="fas fa-graduation-cap text-primary"></i>
+              </div>
+              <h4 class="card-title">Education</h4>
+              <p class="card-text">
+                Currently studying at Faculty of Education, Helwan University —
+                but my real path is in Programming. Certified by the Egyptian
+                Ministry of Communications in: <br />
+
+                - Frontend Development <br />
+
+                - Software Testing (DEPI) <br />
+                With freelance experience in web development, I’m now working
+                toward becoming a Full-Stack Web Developer.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="about-card">
+              <div class="card-icon">
+                <i class="fas fa-bullseye text-primary"></i>
+              </div>
+              <h4 class="card-title">Goals</h4>
+              <p class="card-text">
+                I’m a Frontend Developer, constantly working to master the full
+                web stack. My vision is to build my own agency that helps anyone
+                stand out online — creating websites that feel unique, fast, and
+                unforgettable.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="about-card">
+              <h4 class="card-title">Key Strengths / Current Focus</h4>
+              <div class="row">
+                <div class="col-6">
+                  <h6 class="text-primary mb-2">Strengths:</h6>
+                  <ul class="strengths-list">
+                    <li class="card-text">Problem-Solving</li><br>
+                    <li class="card-text">Logical Thinking</li><br>
+                    <li class="card-text">Continuous Learning</li><br>
+                    <li class="card-text">Teamwork</li><br>
+                  </ul>
+                </div>
+                <div class="col-6">
+                  <h6 class="text-primary mb-2">Current Focus:</h6>
+                  <ul class="focus-list">
+                    <li>
+                      <i class="fas fa-bug text-warning"></i><p class="card-text">Software Testing</p>
+                    </li>
+                    <li>
+                      <i class="fas fa-robot text-info"></i><p class="card-text">Test Automation</p>
+                    </li>
+
+                    <li>
+                      <i class="fas fa-code text-danger"></i><p class="card-text">Frontend Development</p>
+                    </li>
+                    <li>
+                      <i class="fas fa-code text-danger"></i><p class="card-text">Back-End Development</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section (placeholder) -->
+    <section id="skills" class="skills-section py-5">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-8">
+            <h2 class="section-title mb-4">Skills</h2>
+            <p class="section-subtitle">
+              Technical expertise and core competencies
+            </p>
+          </div>
+          <div class="all-skills">
+            <div class="soft-skills">
+              <h3 class="section-title small mb-4">Soft Skills</h3>
+
+              <div class="skill-category">
+                <div class="badge -bg-secondary btn-skill">
+                  Self-Learning & Curiosity
+                </div>
+                <div class="badge -bg-secondary btn-skill">
+                  Attention to Detail & Quality Orientation
+                </div>
+                <div class="badge -bg-secondary btn-skill">
+                  Critical Thinking & Problem-Solving
+                </div>
+                <div class="badge -bg-secondary btn-skill">
+                  Adaptability & Flexibility
+                </div>
+                <div class="badge -bg-secondary btn-skill">
+                  Leadership & Entrepreneurial Mindset
+                </div>
+              </div>
+            </div>
+            <div class="technical-skills">
+              <h3 class="section-title small mb-4">Technical Skills</h3>
+
+              <div class="skill-category">
+                <div class="badge -bg-secondary btn-skill">HTML5</div>
+                <div class="badge -bg-secondary btn-skill">CSS3</div>
+                <div class="badge -bg-secondary btn-skill">JS</div>
+                <div class="badge -bg-secondary btn-skill">
+                  Responsive Design
+                </div>
+                <div class="badge -bg-secondary btn-skill">UI/UX</div>
+                <div class="badge -bg-secondary btn-skill">Version Control</div>
+                <div class="badge -bg-secondary btn-skill">CMS Platforms</div>
+                <div class="badge -bg-secondary btn-skill">
+                  Branding Integration
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates-section py-5">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <h2 class="section-title">Certificates</h2>
+          <p class="section-subtitle">
+            Professional achievements and verified credentials
+          </p>
+          <div class="col-lg-6">
+            <div class="certificate-card">
+              <h4 class="certificate-issuer mb-3">
+                Egypt FWD - Web Development
+              </h4>
+              <button
+                class="btn btn-outline-primary certificate-btn"
+                data-certificate="./media/FWD Certificate_page-0001.jpg"
+              >
+                Certificate <i class="fas fa-external-link-alt ms-2"></i>
+              </button>
+            </div>
+            <div class="certificate-card">
+              <h4 class="certificate-issuer mb-3">
+                Egypt FWD - Web Development
+              </h4>
+              <button
+                class="btn btn-outline-primary certificate-btn"
+                data-certificate="./media/FWD Certificate_page-0001.jpg"
+              >
+                Certificate <i class="fas fa-external-link-alt ms-2"></i>
+              </button>
+            </div>
+            <div class="certificate-card">
+              <h4 class="certificate-issuer mb-3">
+                Egypt FWD - Web Development
+              </h4>
+              <button
+                class="btn btn-outline-primary certificate-btn"
+                data-certificate="./media/FWD Certificate_page-0001.jpg"
+              >
+                Certificate <i class="fas fa-external-link-alt ms-2"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="container-fluid">
+        <div class="row">
+          <!-- Sticky Left Column -->
+          <div class="col-lg-4 projects-left">
+            <div class="projects-header">
+              <img
+                src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=400"
+                alt="Projects"
+                class="projects-image img-fluid rounded mb-4"
+              />
+              <h2 class="projects-title">Projects</h2>
+              <p class="projects-description">
+                A showcase of my recent work and creative solutions in web
+                development and design.
+              </p>
+            </div>
+          </div>
+
+          <!-- Scrollable Right Column -->
+          <div class="col-lg-8 projects-right">
+            <div class="projects-grid">
+              <!-- <div class="project-card"> -->
+              <div class="project-card">
+                <div class="project-mockup">
+                  <div class="project-browser">
+                    <div class="browser-header">
+                      <div class="browser-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+                    <div
+                      class="project-image justify-content-center align-items-center"
+                    >
+                      <img src="media/Metro.png" alt="Portfolio Website" />
+                    </div>
+                  </div>
+                </div>
+                <h4 class="project-title">Metro Cafe</h4>
+                <p class="project-desc">
+                  Landing page for a café with a separate digital menu
+                  showcasing prices and items.
+                </p>
+                <a
+                  href="https://dev-mosa.github.io/Metro-Cafe/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Visit Website <i class="fas fa-external-link-alt ms-2"></i>
+                </a>
+              </div>
+
+              <div class="project-card">
+                <div class="project-mockup">
+                  <div class="project-browser">
+                    <div class="browser-header">
+                      <div class="browser-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+                    <div class="project-image">
+                      <img src="#" alt="Blog Platform" />
+                    </div>
+                  </div>
+                </div>
+                <h4 class="project-title">Blog Platform</h4>
+                <p class="project-desc">
+                  Content management system with SEO optimization
+                </p>
+              </div>
+              <div class="project-card">
+                <div class="project-mockup">
+                  <div class="project-browser">
+                    <div class="browser-header">
+                      <div class="browser-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+                    <div class="project-image">
+                      <img src="#" alt="Blog Platform" />
+                    </div>
+                  </div>
+                </div>
+                <h4 class="project-title">Blog Platform</h4>
+                <p class="project-desc">
+                  Content management system with SEO optimization
+                </p>
+              </div>
+              <div class="project-card">
+                <div class="project-mockup">
+                  <div class="project-browser">
+                    <div class="browser-header">
+                      <div class="browser-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                    </div>
+                    <div class="project-image">
+                      <img src="" alt="Blog Platform" />
+                    </div>
+                  </div>
+                </div>
+                <h4 class="project-title">Blog Platform</h4>
+                <p class="project-desc">
+                  Content management system with SEO optimization
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section (placeholder) -->
+    <section id="testimonials" class="testimonials-section py-5">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-8">
+            <h2 class="section-title mb-4">What Clients Say</h2>
+            <p class="section-subtitle">
+              What clients say about working with me
+            </p>
+          </div>
+          <div class="testimonials-cards">
+            <div class="client">
+              <i class="bx bxs-quote-alt-left"></i>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
+                assumenda. Fugit minima maxime eos ad velit? A aliquid quas
+                dolorum
+              </p>
+              <div class="rating">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+              </div>
+              <img src="./Media/user-2.png" alt="" />
+              <h3>Mike Smith</h3>
+            </div>
+            <div class="client">
+              <i class="bx bxs-quote-alt-left"></i>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
+                assumenda. Fugit minima maxime eos ad velit? A aliquid quas
+                dolorum
+              </p>
+              <div class="rating">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star-half"></i>
+                <i class="bx bx-star"></i>
+                <i class="bx bx-star"></i>
+              </div>
+              <img src="./Media/user-2.png" alt="" />
+              <h3>Mike Smith</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section - Available for Project -->
+    <section class="cta-available py-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-8 col-lg-6">
+            <div
+              class="d-flex align-items-center justify-content-between flex-wrap"
+            >
+              <h3 class="cta-text mb-3 mb-md-0">
+                I Am Available For Your Project
+              </h3>
+              <a href="#contact" class="badge -bg-secondary btn-skill cta-btn"
+                >Let's Start</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Power Section -->
+    <section class="power-section">
+      <div class="container-fluid p-0">
+        <div class="row g-0">
+          <!-- Left Panel -->
+          <div class="power-left">
+            <div class="power-content">
+              <div class="signature-logo mb-4">
+                <p class="signature">Mohamed Sameh</p>
+              </div>
+
+              <h2 class="power-headline">
+                You Have the Power to Tap into a New World
+              </h2>
+
+              <div class="social-icons mb-4">
+                <a href="#" class="social-icon"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a href="#" class="social-icon"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </div>
+
+              <div class="contact-block mb-4">
+                <h6 class="contact-title">CONTACT</h6>
+                <strong>Email:</strong>
+                <p class="contact-email">dev.mohamedsameh@email.com</p><br>
+                <strong>Phone:</strong>
+                <p class="contact-phone">+20 114 021 8814</p>
+                <p class="contact-motivation">
+                  Ready to transform your digital presence with innovative
+                  solutions.
+                </p>
+              </div>
+
+              <a href="#contact" class="btn btn-power">Let's Chat!</a>
+            </div>
+          </div>
+
+          <!-- Right Panel -->
+          <div class="power-right">
+            <div class="power-image">
+              <img
+                src="media/Proj.jpeg"
+                alt="Mohamed Sameh"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="contact-section container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-6">
+            <div class="contact-profile">
+              <div class="contact-photo mb-4">
+                <img
+                  src="media/Proj.jpeg"
+                  alt="Mohamed Sameh"
+                  class="img-fluid rounded-circle"
+                />
+              </div>
+
+              <h2 class="contact-name">Mohamed Sameh</h2>
+              <p class="contact-profession">
+                Frontend Developer & Software Tester
+              </p>
+
+              <div class="contact-divider">
+                <span>-------- Follow Me On --------</span>
+              </div>
+
+              <div class="social-links mb-4">
+                <a href="#" class="social-link linkedin"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a href="#" class="social-link facebook"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+                <a href="#" class="social-link instagram"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a href="#" class="social-link tiktok"
+                  ><i class="fab fa-tiktok"></i
+                ></a>
+              </div>
+
+              <div class="contact-info">
+                <div class="email-section mb-4">
+                  <strong>Email:</strong>
+                  <a
+                    href="mailto:dev.mohamedsameh@email.com"
+                    class="contact-email"
+                    >dev.mohamedsameh@email.com</a
+                  ><br>
+                  <strong>Phone:</strong>
+                  <p class="contact-phone">+20 114 021 8814</p>
+
+                </div>
+
+                <div class="whatsapp-section">
+                  <p class="whatsapp-text">
+                    <strong>Let's Chat on WhatsApp</strong>
+                  </p>
+                  <a href="https://wa.me/201140218814" class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="row">
+          <div class="footer-brand">
+            <a href="#home"><h3 class="footer-name">Mohamed Sameh</h3></a>
+            <p class="footer-tagline">
+              Creating digital experiences that matter
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <ul class="footer-nav right flex-column">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+            </ul>
+            <ul class="footer-nav left flex-column">
+              <li><a href="#services">Services</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="footer-divider" />
+
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="copyright">
+              &copy; 2025 <span class="signature">Mohamed Sameh</span>. All
+              rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Certificate Modal -->
+    <div class="modal fade" id="certificateModal" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body text-center">
+            <img
+              src=""
+              alt="Certificate"
+              class="img-fluid"
+              id="certificateImage"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>

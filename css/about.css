@@ -1,0 +1,186 @@
+/* About Section Styles */
+.about-section {
+  background: var(--darker-text);
+  padding: var(--spacing-3xl) 0;
+  position: relative;
+}
+
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-lg);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-lg);
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.about-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--primary-gradient);
+  transform: translateX(-100%);
+  transition: transform var(--transition-slow);
+}
+
+.about-card:hover::before {
+  transform: translateX(0);
+}
+
+.about-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.card-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--spacing-md);
+  transition: all var(--transition-normal);
+}
+
+.card-icon i {
+  font-size: 1.5rem;
+}
+
+.about-card:hover .card-icon {
+  transform: scale(1.1) rotate(5deg);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.about-card h3 {
+  color: white;
+  font-size: 1.25rem;
+  margin-bottom: var(--spacing-md);
+  font-weight: 600;
+}
+
+.about-card p {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Strengths Card Special Styling */
+.strengths-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.skills-list p,
+.focus-areas p {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  margin-bottom: var(--spacing-xs);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
+}
+
+.skills-list p:last-child,
+.focus-areas p:last-child {
+  margin-bottom: 0;
+}
+
+.skills-list i,
+.focus-areas i {
+  font-size: 0.875rem;
+  flex-shrink: 0;
+}
+
+/* Animation Classes */
+.about-card[data-aos="fade-up"] {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.about-card.aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+  .about-cards {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+  
+  .about-card {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-section {
+    padding: var(--spacing-2xl) 0;
+  }
+  
+  .about-card {
+    padding: var(--spacing-md);
+  }
+  
+  .card-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .card-icon i {
+    font-size: 1.25rem;
+  }
+  
+  .about-card h3 {
+    font-size: 1.125rem;
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .strengths-content {
+    gap: var(--spacing-sm);
+  }
+}
+
+@media (max-width: 575px) {
+  .about-cards {
+    gap: var(--spacing-md);
+  }
+  
+  .about-card {
+    padding: var(--spacing-md);
+  }
+}
+
+/* Dark theme adjustments */
+[data-theme="dark"] .about-section {
+  background: #0F172A;
+}
+
+[data-theme="dark"] .about-card {
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+[data-theme="dark"] .about-card:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
